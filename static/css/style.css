@@ -262,7 +262,7 @@ progress::-moz-progress-value {
 }
 
 
-/* 修改容器样式，移除固定高度限制 */
+/* 修改容器样式，确保最小高度为视窗高度 */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -278,6 +278,7 @@ progress::-moz-progress-value {
     padding: 20px;
     background: #f5f5f5;
     position: relative; /* 改为相对定位 */
+    height: auto; /* 移除固定高度，改为自适应 */
 }
 
 /* 修改主内容区样式，使其高度自适应 */
@@ -285,6 +286,7 @@ progress::-moz-progress-value {
     width: 65%;
     padding: 20px;
     background: #fff;
+    height: auto; /* 移除固定高度，改为自适应 */
 }
 
 .info-header:hover {
