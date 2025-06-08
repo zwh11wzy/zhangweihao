@@ -17,12 +17,12 @@
         <div class="side">
             <div class="me">
                 <div class="portrait"></div>
-                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                <!-- <div class="remodal remodal-img" data-remodal-id="portrait-modal">
                     <h3>请输入图片URL地址：</h3>
                     <br />
                     <input type="text" id="avatar-url">
                     <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div>
+                </div> -->
                 <h1 id="username">张维浩</h1>
                 <h4 id="persona-tag">Python / Web / 互联网教育</h4>
             </div>
@@ -55,10 +55,12 @@
                         <label class="left-label">邮箱</label><span class="label-value">2022112925@stu.hit.edu.cn</span>
                     </li>
                     <li>
-                        <label class="left-label">个人主页</label><span class="label-value">https://zwh11wzy.github.io/zhangweihao/#</span>
+                        <label class="left-label">个人主页</label><span
+                            class="label-value">https://zwh11wzy.github.io/zhangweihao/#</span>
                     </li>
                     <li>
-                        <label class="left-label">Github</label><span class="label-value">https://github.com/zwh11wzy</span>
+                        <label class="left-label">Github</label><span
+                            class="label-value">https://github.com/zwh11wzy</span>
                     </li>
                 </ul>
             </div>
@@ -98,7 +100,8 @@
                     </li>
                     </li>
                     <li>
-                        <label class="left-label">其它</label><span class="label-value">PaddlePaddle（飞桨）、Git、UNet/VNet 及变种、GAN</span>
+                        <label class="left-label">其它</label><span class="label-value">PaddlePaddle（飞桨）、Git、UNet/VNet
+                            及变种、GAN</span>
                     </li>
                     </li>
                 </ul>
@@ -108,7 +111,7 @@
                 <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
                 <hr>
                 <div class="weixin">
-                    <img src="static/image/wechat.png" alt="" style="max-width: 150px; height: 200px;">
+                    <img src="static/image/wechat.png" alt="" style="max-width: 800px; height: 400px;">
 
                 </div>
             </div>
@@ -135,20 +138,33 @@
                 </ul>
             </div>
             <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">科研经历</span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>北京创客空间－实习生（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                        <h3>“KG-Evaluator:A bidirectional verification framework based on internal features of knowledge
+                            graph and external knowledge of Large Language Model (LLM)”（2025.08 AAAI）:</h3>
+                        <p>基于大模型和知识图谱构建新的认知计算验证框架。首先，利用 KG 中与三元组其他相关
+                            的信息约束 LLM 的思考和 RAG 对信息的检索；之后，将 LLM 发现的矛盾转化为候选修正建
+                            议，通过图嵌入模型评估修正后的结构一致性。
+                        <ul>
+                            <li>负责用 deepseek、gpt 等 LLM 校验随机加入错误的三元组知识图谱并记录相关准确率
+                                指标，作为项目的 baseline。</li>
+                            <li>进行框架的测试与训练工作，并参与了论文的撰写、整理及相关数据指标制图工作。</li>
+                        </ul>
                         </p>
                     </li>
                     <li>
-                        <h3>实验楼－课程内容（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                        <h3>“AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting”（2025.02 ACL）：</h3>
+                        <p>基于时态知识图谱图谱预测的类比重放，首先，采用语义驱动的方法，根据给定的查询对
+                            实体和历史进行聚类。随后，使用 LLM 按逆序时间顺序检索综合的长期和短期历史。相同的
+                            LLM 进行类比回放以进行推理，从而获得预测的实体结果。
+                        <ul>
+                            <li>负责用 deepseek 等大模型预测 ICEWS14 数据集中实体对象关系,并将完整的实体-对象
+                                关系语句整理为项目的数据集。</li>
+                            <li>对框架进行训练并调优，进行结果的验证与评估，记录实验结果并制图，负责撰写部
+                                分论文并进行排错，在会议评委的意见下修改论文并最终以 3.0 均分中 findings。</li>
+                        </ul>
                         </p>
                     </li>
                 </ul class="experience-list">
@@ -158,77 +174,93 @@
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>基于 Qt 5 的文本编辑器</h3>
+                        <h3>心颖精割——基于飞桨的 Heart-DualSeg 与心肌瘢痕检测智能诊疗平台
+                            2024 年 5 月-至今</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam。Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
-                            <br />
+                        <ul>
+                            <li>主导医学影像智能诊疗平台全栈开发，基于飞桨平台搭建 UNet/VNet 模型架构，实现心脏结构分割（Dice 系数 80%左右）与瘢痕检测（准确率
+                                85%~90%）双任务并行处理。</li>
+                            <li>创新性设计多模态数据融合方案，通过文心大模型实现影像报告智能生成，提高诊疗实时性，将医生诊断效率提升 30%左右。</li>
+                            <li>带队完成飞桨云平台服务化部署，通过 Docker 容器化封装，帮助完善哈尔滨医科大学附属医院智慧云诊断平台。</li>
+                        </ul>
+                        <br />
                         </p>
                     </li>
                     <li>
-                        <h3>基于 Flask 的主机监视系统</h3>
+                        <h3>华为“健康生活应用”app 开发
+                            2024 年 7 月-2024 年 8 月</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                        <ul>
+                            <li>参与华为“健康生活应用”APP 开发，独立负责用户中心模块，实现个性化主页配置与运动
+                                数据可视化看板，优化用户体验。</li>
+                            <li>设计并实现基于分布式能力的多端同步方案，确保手机与手表设备间训练计划无缝衔接，提
+                                高数据同步效率 30%。</li>
+                            <li>搭建 GitLab CI/CD 自动化流水线，优化代码提交与审核流程，使代码提交规范率提升至 95%，
+                                合并冲突减少 40%，提高开发效率。</li>
+                        </ul>
                         </p>
                     </li>
                     <li>
-                        <h3>基于 Live2D 与 clmtrackr 的山寨 Facerig</h3>
+                        <h3>基于生成式对抗网络的细胞图像分割方法研究
+                            2024 年 12 月-至今</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>如果项目太少，可以在实验楼上找项目做啊:D</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                        <ul>
+                            <li>参与细胞图像分割研究系统的开发与设计项目，研究基于 GAN 网络补全宫颈癌细胞图像因
+                                粘连、杂质等细胞浆缺失的问题，最后形成分割展示系统。</li>
+                            <li>负责图像标注和 Cell-GAN 网络训练，结果验证评估，VUE 前端开发。</li>
+                            <li>参与该项目国自然申请书的部分撰写工作。</li>
+                        </ul>
                         </p>
                     </li>
                 </ul>
             </div>
             <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">获奖情况</span></h2>
                 <hr>
                 <ul class="experience-list">
-                    <li>
-                        <h3>小学生作文二等奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
+                    <li>第六届全球校园人工智能算法精英大赛(算法创新赛)国家一等奖(保研加分竞赛) 2024 年 11 月
+                        (17/110:算法创新赛人工智能+新医科全国赛道前 15%校级第一)
                     </li>
-                    <li>
-                        <h3>曾获统一冰红茶“再来一瓶”奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
+                    <li>2024 年中国大学生计算机设计大赛(保研加分竞赛)国家三等奖(保研加分竞赛) 2024 年 8 月
                     </li>
-                    <li>
-                        <h3>这一行也是为了凑版面</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
+                    <li>全国大学生计算机系统能力大赛操作系统设计赛东北区域赛省级一等奖 2025 年 1 月
+                        (13/127:东北赛区 137 支队伍 13 支省一)
                     </li>
+                    <li>“全国大学生数学建模竞赛”省级一等奖 2023 年 12 月
+                    </li>
+                    <li>“建行杯”中国国际大学生创新大赛(2024)黑龙江省赛区 铜奖 2024 年 8 月
+                    </li>
+                    <li>美国大学生数学建模竞赛 H 奖 2024 年 5 月
+                    </li>
+                    <li>第十四届全国大学生数学竞赛省级三等奖 2023 年 1 月
+                    </li>
+                    <li>“人民奖学金”一等奖、二等奖、三等奖以及校优秀学生 2022、2023、2024 年
+                    </li>
+                    <li>哈尔滨工业大学（深圳）海天阳光（INSUN）教育奖学金 2024 年 12 月
+                    </li>
+                    (3/127:全校报名 127 人中 3 人获奖)
+                </ul>
             </div>
             <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">IT 技能与社会实践</span>
+                </h2>
                 <hr>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    <ul>
+                        <li><strong>IT 技能：</strong>
+                            学习过 Python，Java，Matlab，C++，C 等编程语言，以及 Pytorch，PaddlePaddle, Vue 等框架，参与过网站开发与云平台的大模型部署、Docker 部署、Git 开发。学习之余也爱好看电影、跑步、打篮球和下国际象棋。
+                        </li>
+                        <li><strong>社会实践：</strong>
+                            <ul>
+                                <li>在北京航瑞达科技有限公司科技部实习约 2 月，负责数据处理工作。
+                                    </li>
+                                <li>参与暑期华为鸿蒙菁英班培训约 1 月，进行 app 开发。
+                                    </li>
+                                <li>作为队长组织社会思政重点实践项目——寻访抗联精神 赓续红色基因。
+                                    </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </p>
             </div>
         </div>
